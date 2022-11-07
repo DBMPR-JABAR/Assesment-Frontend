@@ -27,7 +27,7 @@ function ajaxLogin() {
       
 			success: function (data) {
         console.log(data);
-        localStorage.setItem('token', data.token);
+        localStorage.setItem('token', data);
         window.location = "dashboard.html";
       },
       error: function (data) {
