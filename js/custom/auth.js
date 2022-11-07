@@ -24,8 +24,10 @@ function ajaxLogin() {
 				password : password
 				// action : actionString
 			},
+      
 			success: function (data) {
         console.log(data);
+        localStorage.setItem('token', data.token);
         window.location = "dashboard.html";
       },
       error: function (data) {
@@ -55,7 +57,7 @@ function ajaxLogin() {
   error: function (data) {
     console.log(data);
   },
-}); */
+}); 
 
 // POST AUTH LOGIN
 // $.ajax({
