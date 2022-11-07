@@ -44,13 +44,13 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                            <input type="email" class="form-control form-control-user" name="login-email-id"
+                                                id="login-email-id" aria-describedby="emailHelp"
                                                 placeholder="Masukkan E-Mail / NIK / NIP">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Masukkan password">
+                                            <input type="password" class="form-control form-control-user" name="login-password"
+                                                id="login-password" placeholder="Masukkan password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -59,7 +59,8 @@
                                                     Saya</label>
                                             </div>
                                         </div>
-                                        <a href="dashboard.html" class="btn btn-success btn-user btn-block">
+                                        <a class="btn btn-success btn-user btn-block" value="Log In"
+                                        onclick="ajaxLogin()">
                                             Login
                                         </a>
                                     </form>
@@ -91,6 +92,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/admin.min.js"></script>
+    <script src="./js/custom/auth.js"></script>
+
 
 </body>
 
